@@ -824,7 +824,7 @@ type SliderProps =
     | Editable of bool
     | Max of float
     | Min of float
-    | OnChange of Function
+    | OnChange of (float -> unit)
     | Pinned of bool
     | Snaps of bool
     | Step of float
