@@ -671,9 +671,9 @@ type IconMenuProps =
     | Icon of U2<React.ReactNode, string>
     | IconRipple of bool
     | MenuRipple of bool
-    | OnHide of Function
-    | OnSelect of Function
-    | OnShow of Function
+    | OnHide of (unit -> unit)
+    | OnSelect of (obj -> unit)
+    | OnShow of (unit -> unit)
     | Position of (* TODO StringEnum auto | static | topLeft | topRight | bottomLeft | bottomRight *) string
     | Selectable of bool
     | Selected of obj
